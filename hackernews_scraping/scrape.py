@@ -33,6 +33,7 @@ def create_custom_hn(links, subtext):
  
 pprint.pprint(create_custom_hn(mega_links, mega_subtext))
 
+
 hn_data = create_custom_hn(mega_links, mega_subtext)
 
 with open('top_hackernews_stories.csv', mode='w', newline='', encoding='utf-8') as file:
@@ -40,5 +41,5 @@ with open('top_hackernews_stories.csv', mode='w', newline='', encoding='utf-8') 
     writer.writeheader()
     writer.writerows(hn_data)
 
-print("✅ Data saved to top_hackernews_stories.csv")
+print("Data saved to top_hackernews_stories.csv")
 
